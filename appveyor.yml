@@ -1,0 +1,9 @@
+image:
+  - Visual Studio 2017
+clone_folder: c:\projects\source
+build_script:
+- cmd: >-
+    mkdir build
+    cd build
+    cmake c:\project\source -G "Visual Studio 2-15"
+    cmake --build ./build --config "Debug" -- -j2
